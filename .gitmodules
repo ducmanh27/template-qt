@@ -1,0 +1,6 @@
+[submodule "submodules/arch"]
+	path = submodules/arch
+	url = ssh://git@192.168.105.40:7999/dkhl/arch.git
+[submodule "submodules/googletest"]
+	path = submodules/googletest
+	url = ssh://git@192.168.105.40:7999/vlsxp/googletest.git
