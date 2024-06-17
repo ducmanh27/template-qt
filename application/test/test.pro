@@ -31,7 +31,8 @@ unix:!macx: PRE_TARGETDEPS += $$PWD/../../submodules/googletest/lib_64/libgmock.
 
 SOURCES += \
     main.cpp \
-    tst_addnumber.cpp
+    tst_connectionconfirm.cpp \
+    tst_connectionrequest.cpp
 
 HEADERS += \
 

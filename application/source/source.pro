@@ -27,7 +27,6 @@ DEFINES += QT_DEPRECATED_WARNINGS
 # In order to do so, uncomment the following line.
 # You can also select to disable deprecated APIs only up to a certain version of Qt.
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
-
 #This script part is to execute your shell script before build project
 CONFIG(release, debug|release) {
 #    extralib.target = extra
@@ -46,9 +45,20 @@ UI_DIR = $$DESTDIR/
 include(../defaults.pri)
 
 HEADERS += \
+    communication/Decode.h \
+    communication/Encode.h \
+    interface/IDecode.h \
+    interface/IEncode.h \
     manager/AppManager.h \
+    tcp_header/COTPHeader.h \
+    tcp_header/ErrorTable.h \
+    tcp_header/S7Comm.h \
+    tcp_header/Status.h \
+    tcp_header/TPKTHeader.h
 
 
 SOURCES += \
+    communication/Decode.cpp \
+    communication/Encode.cpp \
     manager/AppManager.cpp \
-
+    tcp_header/ErrorTable.cpp
